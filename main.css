@@ -1,0 +1,143 @@
+body{
+    max-width: 1380px;
+    margin: auto;
+    background-image:url('images/bg_home2.gif');
+}
+
+#main{
+    background-color:#FFFFFF;
+    max-width:1150px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#main_content{
+    max-width: 1080px;
+    margin: auto;
+    height: auto;
+}
+
+
+/*  ==================Set Top Menu ===================*/
+.top-menu{
+    cursor:pointer;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.font-h{
+    font-family: "Microsoft Sans Serif", "MS Sans Serif", sans-serif;
+    color: #646464;
+}
+
+.text_tahoma13 {
+    font-family: "Tahoma";
+    font-size: 13px;
+    color: #666666;
+    margin: 0px;
+}
+
+.table-price-online{
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid #cccccc;
+    background-color: #f8f8f8;
+    margin: 5px 5px 5px 20px;
+}
+
+.container-box-social{
+    width: 100%;
+    padding-left: 5px !important;
+    margin-left: 0px !important;
+    border:1px solid #eee;
+    border-left: none;
+    border-right: none;
+    padding-top: 5px;
+    padding-left: 5px
+
+}
+
+.box-social{
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn-fb{
+    background-color: #4b5a94;
+    border-radius: 20px;
+    margin-top: 2px;
+    min-height: 40px;
+}
+
+button.btn-fb:hover{
+    background-color:#4b5a94 ;
+}
+
+
+.product_price{
+    border-top: 2px solid #f2dede;
+    border-bottom: 2px solid #f2dede;
+    font-size: 11px;
+    font-weight: bolder;
+    padding-left: 5px;
+    text-align: center;
+}
+
+
+.product_price-detail{
+    font-size: 11px;
+    font-weight: bolder;
+    padding-left: 10px;
+    text-align: left ;
+    background-color:#f7f7f7;
+    margin-top:2px;
+    color:#666666;
+}
+
+
+.text_price_detail{
+    margin-left:10px;
+    color:#ff0000;
+    font-weight: bolder;
+    font-family: "Tahoma", "MS Sans Serif", "Angsana New";
+}
+
+/*===================== หมวดหมู่มือถือ=============================*/
+.ul-price-category{
+    font-size: 11px;
+    font-weight: bolder;
+    padding:0px;
+}
+.ul-price-category li{
+    list-style: square inside url('images/icon/arrow_red.gif');
+    margin-left:11px;
+}
+.ul-price-category a{
+    color:#666666;
+}
+/*===============================================================*/
+
+
+/*---------------------- Set icon menu bottom -----------------------*/
+#menu_footer ul>li{
+    list-style: square inside url("images/icon/menu_bottom.gif");
+    font-size:11px;
+
+}
+
+
+@media (min-width: 1200px){
+    .top-menu{
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
+
+@media (min-width: 1050px){
+    #col_content_right{
+        min-width: 330px;
+    }
+}
+
