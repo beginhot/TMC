@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ThailandMobileCenter</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <link href="min_css.css" rel="stylesheet">	
+   
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/jquery.js"></script>
+    
+    <script src="assets/jquery-ui/jquery-ui.min.js"></script>      
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+  <script>
+      
+    //=================== Function Set index Banner Side Left or Right ==============
+    function fix_index_banner(){
+    
+      var page_width=$(window).width();  
+      var web_width=$("#main").width();   
+      var side_widt=(page_width-web_width)/2;
+      var banner_side_widt=115;
+      var index_banner=(side_widt-banner_side_widt);
+      //console.log(page_width,web_width,side_widt,index_banner);
+      $('.banner-side-left').css('left',index_banner);
+      $('.banner-side-right').css('right',index_banner);
+  
+    }
+
+
+
+
+
+    $(document).ready(function() {
+        //============= Call Function find Index banner ==================
+        console.log($(window).width());
+        fix_index_banner();
+
+    });  
+
+
+    //============= Event On Window Resize =================
+    $(window).resize(function(event) {
+      fix_index_banner();
+    });
+
+
+
+  </script>
+
+
+    <style>
+
+     
+
+    </style>
+  </head>
+  <body>
+
+    <!--======================= Banner Side Left ======================-->
+    <div class="hidden-xs hidden-sm banner-side-left" style="max-width: 115px;">
+      <img src="images/banner_side_left.png" class="img-responsive">
+    </div >
+
+
+    <!--======================= Body Center ======================--> 
+    <div id="main" style="max-width:1150px;margin: auto;">
+      <div id="top-header" class="row hidden-xs">
+          <div class="col-sm-12 col-centered" style="height:62px;margin-top: 12px;margin-bottom: 14px;">
+              <div class="col-sm-5">
+                <img src="images/logo_web.png" class="img-responsive">
+              </div>
+              <!-- ========= Banner Top 1 ============ -->
+              <div class="col-sm-7">
+                  <img src="images/top_banner.png" class="img-responsive">
+              </div>
+          </div>
+      </div>
+      
+
+      <nav class="navbar navbar-inverse  navbar-static-top" style="background-color:#4e4c48;">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only"><img src="images/logo_web.png" class="img-responsive"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>            
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="margin-top: 10px;">
+                 <!--li><a href="#"><span class="font-top-menu">หน้าแรก</span></a></li>
+                 <li><a href="#"><span class="font-top-menu">แคตตาล็อกมือถือ</span></a></li>
+                 <li><a href="#"><span class="font-top-menu">ราคามือถือ</span></a></li>
+                 <li><a href="#"><span class="font-top-menu">โปรโมชั่นมือถือ</span></a></li>
+                 <li><a href="#"><span class="font-top-menu">ตลาดมือถือ</span></a></li>
+                 <li><a href="#"><span class="font-top-menu">ทดสอบมือถือ</span></a></li>
+                 <li><a href="#"><span class="font-top-menu">ชุมชนมือถือ</span></a></li -->
+
+                 <li class="top-menu"><img src="images/menu/menu_home.png" class="img-responsive"></li>
+                 <li class="hidden-xs"><img src="images/icon/line_menu.png" class="img-responsive"></li>
+                 
+                 <li class="top-menu"><img src="images/menu/menu_catalog.png" class="img-responsive"></li>
+                 <li class="hidden-xs"><img src="images/icon/line_menu.png" class="img-responsive"></li>
+
+                 <li class="top-menu"><img src="images/menu/menu_price.png" class="img-responsive"></li>
+                 <li class="hidden-xs"><img src="images/icon/line_menu.png" class="img-responsive"></li>
+
+                 <li class="top-menu"><img src="images/menu/menu_promotion.png" class="img-responsive"></li>
+                 <li class="hidden-xs"><img src="images/icon/line_menu.png" class="img-responsive"></li>
+
+                 <li class="top-menu"><img src="images/menu/menu_market.png" class="img-responsive"></li>
+                 <li class="hidden-xs"><img src="images/icon/line_menu.png" class="img-responsive"></li>
+
+                 <li class="top-menu"><img src="images/menu/menu_review.png" class="img-responsive"></li>
+                 <li class="hidden-xs"><img src="images/icon/line_menu.png" class="img-responsive"></li>
+
+                 <li class="top-menu"><img src="images/menu/menu_commu.png" class="img-responsive"></li>
+                </ul>
+              </div>
+            </div>
+      </nav>
+
+        <!-- ================== Start Banner Top 2========================= -->
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="images/banner_bottom_menu.png" class="img-responsive" style="margin: auto;">
+        </div>
+      </div>
+
+
+      <!-- ================== Start Body Content========================= -->
+      <div id="main_content" style="margin-top: 15px;">
+
+          <!-- ================== Title Product Bar ========================= -->
+           <div class="row" >
+              <div class="col-sm-12" style="font-size: 2em;">
+                <label>Samsung Galaxy S7 edge+ </label>
+                <span class="font-h">(ซัมซุง Galaxy S7 edge+)</span>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+             <p style="font-size: 12px;"><span style="color: #ff0000;">ตอนนี้คุณอยู่ที่</span> >> <a href="#">หน้าแรก</a> >> <a href="#">catelog มือถือ</a> >> <a href="#">samsung (ซัมซุง)</a> >> <a href="#" style="font-weight: bold;">Samsung Galaxy S7 edge+ -ซัมซุง Galaxy S7 edge+</a></p>
+            </div>
+          </div>
+          <!-- ==================End Title Product Bar ========================= -->
+          
+          <!-- ================== Social Bar ========================= -->
+          <div class="row" style="min-height: 55px;border:1px solid #eee;border-left: none;border-right: none;padding-top: 5px;">
+            <div class="col-sm-12">
+                <div style="max-width: 100px;text-align: center;float: left;">
+                  <span style="color:#3a85da;font-size: 18px;">625</span><br><span style="font-size: 10px;">SHARES</span>
+                </div>
+                 <div style="text-align: center;float: left;margin-left: 10px;">
+                 <button type="button" class="btn btn-default" style="background-color: #4b5a94;border-radius: 20px;margin-top: 3px;
+      min-height: 40px;"> <img src="images/icon/icon_facebook.png" class="img-responsive pull-left" style="margin: auto;"><span style="color:#FFFFFF;font-size: 14px; margin-right: 10px;">0</span></button>
+                </div>
+                 <div style="max-width: 100px;text-align: center;float: left;margin-left: 10px;">
+                  <img src="images/icon/icon_twitter.png" class="img-responsive" style="margin: auto;">
+                </div>
+                 <div style="max-width: 100px;text-align: center;float: left;margin-left: 10px;">
+                   <img src="images/icon/icon_google_plus.png" class="img-responsive" style="margin: auto;">
+                </div>
+                 <div style="max-width: 100px;text-align: center;float: left;margin-left: 10px;">
+                   <img src="images/icon/icon_line.png" class="img-responsive" style="margin: auto;">
+                </div>
+                <div style="max-width: 100px;text-align: center;float: left;margin-left: 10px;">
+                   <img src="images/icon/icon_email.png" class="img-responsive" style="margin: auto;">
+                </div>
+                <div style="min-width: 100px;text-align: center;float: right;margin-left: 10px;padding: 12px;">
+                   <img src="images/icon/calendar.png" class="img-responsive" style="margin: auto;float: left;"><span style="color: #565656;font-size: 10px;">Fridy 03 June 2016</span>
+                </div>
+            </div>
+          </div>
+           <!-- ==================End Social Bar ========================= -->
+
+          <!-- =========================== Content Detail ========================== -->
+          <div id="body_detail" style="margin-top: 15px;">
+            <div class="row" style="margin: auto;">
+
+            <!-- ===================== Detail Left ====================== -->
+              <div class="col-sm-2" style="margin-bottom: 10px;">
+
+
+                <div id="img_product" style="background-color: #f2dede;padding: 10px;">
+                  <!--img src="images/img_product.png" class="img-responsive center-block" -->
+                  <img src="images/Samsung-Galaxy-S7-edge-01.jpg" class="img-responsive center-block">
+                </div>  
+
+                 <div id="product_price" style="margin-top: 5px;">                  
+                  <div class="product_price">ราคามือถือจากศูนย์ต่างๆ </div>
+                  <div class="product_price-detail">ราคาศูนย์ <span class="text_price_detail">26,900 บาท <img src="images/icon/price_hilight.gif" ></span></div>
+                  <div class="product_price-detail">ราคากลาง <span class="text_price_detail">26,900 บาท <img src="images/icon/price_hilight.gif" ></span></div>
+                  <div class="product_price-detail">อัพเดทวันที่ : <span style="color: #008000;">19/04/2016</span></div>
+                  <div class="product_price-detail">ว่างจำหน่าย : <span style="color: #008000;">มีนาคม 2559</span></div>
+
+                </div>     
+
+
+                <div id="compared_mobile" style="border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 10px;">
+                  <img src="images/menu/icon_compared_mobile.jpg" class="img-responsive center-block">
+                  <p class="text-center" style="color: #005ca2;font-weight: bolder;font-size: 11px;"><a href="#">เปรียบเทียบรุ่นมือถือ</a></p>
+                </div> 
+
+                <div id="price_user" class="hidden-xs" style="border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 10px;padding: 2px;"> 
+                  <div style="font-size: 11px;font-weight: bolder;color: #ff0000;">* ราคามือถือจากผู้ใช้ </div>          
+                  <p style="font-size: 11px;">เป็นราคาที่ถูกโพสต์ในระบบแบบอัตโนมัติ กรุณาตรวจสอบราคาจากร้านค้าจริงก่อนตัดสินใจ</p>
+                </div>
+
+                 <div id="price_list" class="hidden-xs" style="margin-top: 10px;">
+                  <div class="product_price">ราคามือถือจากผู้ใช้ <img src="images/icon/new_icon.gif" alt=""></div>
+                  <table style="font-size: 11px;width: 100%;background-color:#f7f7f7;">
+                    <tr>
+                      <td style="width: 45%;"> <a href="#">ThaiMobile7< </a></td>
+                      <td style="width: 45%;" class="text_price_detail">23,200 บาท</td>
+                      <td style="width: 10%;"><a href="#"><img src="images/icon/m1.gif" alt="" title="ราคามือ1 (เครื่องศูนย์)&nbsp;&nbsp;www.thaimobileseven.com<mbk center>LINE  mong_0902&nbsp;&nbsp;&nbsp;วันที่ 06/06/2016&nbsp;"></a>
+                      <br><a href="#"><img src="images/icon/del.gif" alt=""  title="แจ้งลบ"></a></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%;"> <a href="#">ThaiMobile7< </a></td>
+                      <td style="width: 45%;" class="text_price_detail">23,200 บาท</td>
+                      <td style="width: 10%;"><a href="#"><img src="images/icon/m1.gif" alt="" title="ราคามือ1 (เครื่องศูนย์)&nbsp;&nbsp;www.thaimobileseven.com<mbk center>LINE  mong_0902&nbsp;&nbsp;&nbsp;วันที่ 06/06/2016&nbsp;"></a>
+                      <br><a href="#"><img src="images/icon/del.gif" alt=""  title="แจ้งลบ"></a></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%;"> <a href="#">ThaiMobile7< </a></td>
+                      <td style="width: 45%;" class="text_price_detail">23,200 บาท</td>
+                      <td style="width: 10%;"><a href="#"><img src="images/icon/m1.gif" alt="" title="ราคามือ1 (เครื่องศูนย์)&nbsp;&nbsp;www.thaimobileseven.com<mbk center>LINE  mong_0902&nbsp;&nbsp;&nbsp;วันที่ 06/06/2016&nbsp;"></a>
+                      <br><a href="#"><img src="images/icon/del.gif" alt=""  title="แจ้งลบ"></a></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%;"> <a href="#">ThaiMobile7< </a></td>
+                      <td style="width: 45%;" class="text_price_detail">23,200 บาท</td>
+                      <td style="width: 10%;"><a href="#"><img src="images/icon/m1.gif" alt="" title="ราคามือ1 (เครื่องศูนย์)&nbsp;&nbsp;www.thaimobileseven.com<mbk center>LINE  mong_0902&nbsp;&nbsp;&nbsp;วันที่ 06/06/2016&nbsp;"></a>
+                      <br><a href="#"><img src="images/icon/del.gif" alt=""  title="แจ้งลบ"></a></td>
+                    </tr>
+                    <footer>
+                      <tr><td colspan="3" style="width: 100%;padding: 2px;"><div style="border: 0.1px dotted #808080;"></div></td></tr>
+                      <tr><td colspan="3" style="text-align: right;"> <a href="#">ดูราคามือถือจากผู้ใช้ ทั้งหมด</a></td></tr>
+                    </footer>
+                  </table>             
+                </div>
+
+
+                <div class="hidden-xs" style="border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 10px;padding: 2px;"> 
+                  <div style="font-size: 11px;font-weight: bolder;color: #ff0000;">* มือถือตามหมวดหมู่การใช้งาน (Mobile Special group) </div>                           
+                </div>
+
+                <div id="price_category" class="hidden-xs" style="margin-top: 10px;border-bottom:2px solid #f2dede ;">
+                  <div class="product_price">หมวดหมู่มือถือ รุ่นนี้ <img src="images/icon/new_icon.gif" alt=""></div>
+                  <ul class="ul-price-category">
+                    <li><a href="#">มือถือ จอสัมผัส</a></li>
+                    <li><a href="#" >มือถือ ฟังเพลง</a></li>
+                    <li><a href="#">มือถือ ถ่ายรูป</a></li>
+                    <li><a href="#">มือถือ สมาร์ทโฟน</a></li>
+                    <li><a href="#">มือถือ อินเทอร์เน็ต</a></li>
+                    <li><a href="#"">มือถือ จีพีเอส</a></li>
+                    <li><a href="#">มือถือ แฟชั่น</a></li>
+                    <li><a href="#">มือถือ บางเฉียบ</a></li>
+                    <li><a href="#">มือถือ แข็งแรง</a></li>
+                    <li><a href="#">มือถือ สองซิม</a></li>
+                    <li><a href="#">มือถือ แอนดรอยด์</a></li>
+                  </ul>
+                 </div>
+
+                <div class="hidden-xs" style="margin-top: 10px;font-size: 11px;padding-left: 10px;" >
+                  <table style="width:100%">
+                    <tr>
+                      <td style="width: 40px;"><img src="images/icon/reply.gif" alt=""></td>
+                      <td><a href="#">แจ้งราคาจากผู้ใช้ที่นี่</a></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 40px;"><img src="images/icon/photo_icon.gif" alt=""></td>
+                      <td><a href="#">ดูรูปเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 40px;"><img src="images/icon/send_friend.gif" alt=""></td>
+                      <td><a href="#">ส่งให้เพื่อนดู</a></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 40px;"><img src="images/icon/cart.gif" alt=""></td>
+                      <td><a href="#">เก็บเข้า My Catalog</a></td>
+                    </tr>
+                     <tr>
+                      <td style="width: 40px;"><img src="images/icon/correct.gif" alt=""></td>
+                      <td><a href="#">แจ้งแก้ไขข้อมูล</a></td>
+                    </tr>
+                  </table>
+                 </div>
+
+                <div class="hidden-xs" style="margin-top: 10px;">
+                  <div class="product_price" style="text-align: left;">คะแนนโหวตมือถือ Samsung Galaxy S7 edge </div>
+                  <table width="100%" cellspacing="5" cellpadding="2" style="font-size: 11px;margin-top:10px;">          
+                    <tbody>
+                      <tr>
+                        <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">การออกแบบดีไซน์</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #c5b8b8;"><img src="images/icon/bar_graph_image1_1.gif" alt="" style="width: 90%;height: 12px;"></td>
+                        <td style="width: 10%;padding-left: 5px;">9.0</td>
+                     </tr>                     
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+
+
+                      <tr>
+                        <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">คุณสมบัติและฟังก์ชัน</td>
+                      </tr>
+                       <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #c5b8b8;"><img src="images/icon/bar_graph_image1_2.gif" alt="" style="width: 90%;height: 12px;"></td>
+                        <td style="width: 10%;padding-left: 5px;">9.0</td>
+                     </tr>
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+
+
+                      <tr>
+                        <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">ประสิทธิภาพและเสถียรภาพ</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #c5b8b8;"><img src="images/icon/bar_graph_image1_3.gif" alt="" style="width: 90%;height: 12px;"></td>
+                        <td style="width: 10%;padding-left: 5px;">9.0</td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+
+
+                      <tr>
+                        <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">ความแข็งแรงทนทาน</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #c5b8b8;"><img src="images/icon/bar_graph_image1_4.gif" alt="" style="width: 90%;height: 12px;"></td>
+                        <td style="width: 10%;padding-left: 5px;">9.0</td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+
+
+                      <tr>
+                        <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">ความคุ้มค่า</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #c5b8b8;"><img src="images/icon/bar_graph_image1_5.gif" alt="" style="width: 90%;height: 12px;"></td>
+                        <td style="width: 10%;padding-left: 5px;">9.0</td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+
+
+                      <tr>
+                        <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;font-weight: bolder;">คะแนนรวมเฉลี่ย</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #c5b8b8;"><img src="images/icon/bar_graph_image1_6.gif" alt="" style="width: 90%;height: 12px;"></td>
+                        <td style="width: 10%;padding-left: 5px;">9.0</td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" style="height: 5px;width: 100%;"></td>
+                      </tr>
+
+
+                      <tr><td colspan="2" style="text-align: right;">จำนวนผู้โหวตทั้งหมด : 26 คน</td></tr>
+                      <tr>
+                        <td colspan="2"><a href="#" style="font-weight: bolder;float: left;padding-top: 5px;color: #fe8606;font-size: 10px;">คลิ๊กเปิดหน้าต่างโหวต</a> <a href="#" style="float: right;"><img src="images/icon/vote_mo.gif" alt="" class="img-responsive"></a></td>                        
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="hidden-xs" style="margin-top: 10px;">
+                  <div class="product_price" style="text-align: left;font-weight: normal;">Mobile Review (Review มือถือ)</div>
+                  <ul style="font-size: 11px;padding: 0px;padding-left: 20px;">
+                    <li><a href="#">Samsung Galaxy S7 edge Review</a></li>
+                  </ul>
+                </div>
+
+
+
+                <div class="hidden-xs" style="margin-top: 10px;">
+                  <div class="product_price" style="text-align: left;font-weight: normal;"> มือถือ Samsung รุ่นอื่นที่น่าสนใจ</div>
+                  <ul style="font-size: 11px;padding: 0px;padding-left: 20px;">
+                    <li><a href="#">Samsung Galaxy J7 Version 2 (2016)</a></li>
+                    <li><a href="#">Samsung Galaxy J7 Version 2 (2016)</a></li>
+                    <li><a href="#">Samsung Galaxy J7 Version 2 (2016)</a></li>
+                    <li><a href="#">Samsung Galaxy J7 Version 2 (2016)</a></li>
+                    <li><a href="#">Samsung Galaxy J7 Version 2 (2016)</a></li>
+                  </ul>
+                  <div style="border: 0.1px dotted #808080;"></div>
+                  <div style="font-size: 11px;">*<a href="#">ดูรายละเอียดมือถือ Samsung ทุกรุ่น</a></div>
+                </div>
+
+
+                <div class="hidden-xs" style="margin-top: 10px;">
+                  <div class="product_price" style="text-align: left;font-weight: normal;"><img src="images/icon/email.gif" alt="" style="margin-right: 5px;">สมัครรับข้อมูลมือถือ Samsung</div>
+                  <div style="margin-top: 5px;">                   
+                    <input type="text" placeholder=" e-mail ของคุณ" style="width: 65%;height: 25px;">
+                    <input type="button" value="Submit" style="font-size: 10px;">
+                  </div>
+                </div>
+
+
+              </div>
+              
+
+              <!-- ===================== Detail Center ====================== -->
+              <div class="col-sm-7">
+                
+                <div id="bar_1">
+                  <img src="images/menu/bar_1.gif" class="img-responsive">
+                  <p>
+                     <img src="images/bar1.png" class="img-responsive">
+                  </p>
+                </div>
+
+                <div id="bar_price">
+                   <img src="images/menu/bar_price.png" class="img-responsive">
+                    <p>
+                     <img src="images/banner_body.png" class="img-responsive">
+                  </p>
+                </div>
+
+
+                <div id="bar_2">
+                   <img src="images/menu/bar_2.gif" class="img-responsive">
+                    <p>
+                     <img src="images/bar2.png" class="img-responsive">
+                  </p>
+                </div>
+
+
+                <div id="bar_3">
+                   <img src="images/menu/bar_3.gif" class="img-responsive">
+                   <p>
+                     <img src="images/bar3.png" class="img-responsive">
+                  </p>
+                </div>
+
+
+                <div id="bar_4">
+                   <img src="images/menu/bar_4.gif" class="img-responsive">
+                   <p>
+                     <img src="images/bar4.png" class="img-responsive">
+                  </p>
+                </div>
+
+
+                <div id="bar_5">
+                   <img src="images/menu/bar_5.gif" class="img-responsive">
+                   <p>
+                     <img src="images/bar5.png" class="img-responsive">
+                  </p>
+                </div>
+
+
+                <div id="bar_6">
+                   <img src="images/menu/bar_6.gif" class="img-responsive">
+                   <p>
+                     <img src="images/bar6.png" class="img-responsive">
+                  </p>
+                </div>
+
+                <!--========================= Ads =============================-->
+                <div style="margin: 0 auto;"><img src="images/ads_content_bottom.png" alt=""></div>
+
+
+                <div class="hidden-xs" style="font-size: 11px;border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 20px;padding: 2px;"> 
+                  <span style="font-weight: bolder;color: #ff0000;">*  เกี่ยวกับข้อมูลมือถือ </span>    
+                  <span>เพื่อให้คุณได้รับข้อมูลที่ถูกต้องมากที่สุด โปรดตรวจสอบคุณสมบัติและราคาของมือถือรุ่นนี้จากตัวแทนจำหน่ายหรือร้านค้าอีกครั้งหนึ่ง และหากพบข้อมูลคุณสมบัติที่ไม่ถูกต้องสามารถติดต่อทีมงานได้</span>  
+                  <a href="#">>> ที่นี่ครับ</a>                     
+                </div>
+
+
+                <!--================================ ข่าวสาร บทความที่เกี่ยวข้องกับมือถือ ===========================-->
+                <div class="panel panel-default" style="margin-top: 20px;">
+                  <div class="panel-heading" style="background-color: #333333;color: #FFFFFF;"><img src="images/icon/view.gif" alt=""><span style="margin-left: 10px;">ข่าวสาร บทความที่เกี่ยวข้องกับมือถือ Samsung Galaxy S7 edge</span></div>
+                  <div class="panel-body" style="padding: 5px;">
+                      <table style="width: 100%;" cellpadding="0" cellspacing="0" >
+                        <tr>
+                          <td width="140px">
+                            <div class="box-div-news"><img src="images/201666_12014_b.jpg" alt=""></div>
+                            <span style="font-size: 11px;"><a href="#">Samsung Galaxy Note 6 edge เผยภาพเรนเดอร์ชุดแรก มาพร้อมจอขอบโค้งสองด้า</a></span>
+                          </td>
+                           <td width="140px">
+                            <div class="box-div-news"><img src="images/201666_12014_b.jpg" alt=""></div>
+                            <span style="font-size: 11px;"><a href="#">Samsung Galaxy Note 6 edge เผยภาพเรนเดอร์ชุดแรก มาพร้อมจอขอบโค้งสองด้า</a></span>
+                          </td>
+                           <td width="140px">
+                            <div class="box-div-news"><img src="images/201666_12014_b.jpg" alt=""></div>
+                            <span style="font-size: 11px;"><a href="#">Samsung Galaxy Note 6 edge เผยภาพเรนเดอร์ชุดแรก มาพร้อมจอขอบโค้งสองด้า</a></span>
+                          </td>
+                           <td width="140px">
+                            <div class="box-div-news"><img src="images/201666_12014_b.jpg" alt=""></div>
+                            <span style="font-size: 11px;"><a href="#">Samsung Galaxy Note 6 edge เผยภาพเรนเดอร์ชุดแรก มาพร้อมจอขอบโค้งสองด้า</a></span>
+                          </td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div class="panel-footer" style="font-size: 11px;text-align: right;"><a href="#">ข่าวสาร บทความที่เกี่ยวข้องกับมือถือ Samsung Galaxy S7 edge ทั้งหมด</a></div>
+                </div>
+
+                <!-- ======================================= Banner =================================== -->
+                <div style="margin: auto;width: 100%;">
+                  <img src="images/banner_bottom_1.png" alt="" class="img-responsive">
+                </div>
+
+                <div style="margin-top: 20px;">
+                  <img src="images/icon/bar_recommened_samsung.gif" alt="" class="img-responsive">                  
+                </div>
+                <div style="margin-top: 10px;" class="row" >
+                     <div class="col-sm-2" style="text-align: center;font-size: 11px;" >
+                       <div style="padding: 5px;background-color: #eceaea;"><img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive"></div>
+                       <div><a href="#">Samsung Galaxy A7 (2016)</a></div>       
+                     </div>
+                     <div class="col-sm-2" style="text-align: center;font-size: 11px;" >
+                       <div style="padding: 5px;background-color: #eceaea;"><img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive"></div>
+                       <div><a href="#">Samsung Galaxy A7 (2016)</a></div>       
+                     </div>
+                     <div class="col-sm-2" style="text-align: center;font-size: 11px;" >
+                       <div style="padding: 5px;background-color: #eceaea;"><img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive"></div>
+                       <div><a href="#">Samsung Galaxy A7 (2016)</a></div>       
+                     </div>
+                     <div class="col-sm-2" style="text-align: center;font-size: 11px;" >
+                       <div style="padding: 5px;background-color: #eceaea;"><img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive"></div>
+                       <div><a href="#">Samsung Galaxy A7 (2016)</a></div>       
+                     </div>
+                     <div class="col-sm-2" style="text-align: center;font-size: 11px;" >
+                       <div style="padding: 5px;background-color: #eceaea;"><img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive"></div>
+                       <div><a href="#">Samsung Galaxy A7 (2016)</a></div>       
+                     </div>
+                     <div class="col-sm-2" style="text-align: center;font-size: 11px;" >
+                       <div style="padding: 5px;background-color: #eceaea;"><img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive"></div>
+                       <div><a href="#">Samsung Galaxy A7 (2016)</a></div>       
+                     </div>  
+                </div>
+
+                <div style="margin-top: 20px;">
+                  <img src="images/icon/bar_mobilegroup.gif" alt="" class="img-responsive">                  
+                </div>
+                <div style="margin-top: 10px;" class="row" ></div>
+
+
+
+
+                <div style="margin-top: 20px;"></div>
+                
+              </div>
+
+              <!-- ===================== Detail Right ====================== -->
+              <div class="col-sm-3">
+
+                <div id="banner_right">
+                  <img src="images/banner_right.png" class="img-responsive">
+                </div>
+
+                <div class="panel-body" id="recommend_content">
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs">
+                                  <li class="active"><a href="#home" data-toggle="tab" aria-expanded="false">ข่าวอื่นที่เกี่ยวข้อง</a>
+                                  </li>
+                                  <li><a href="#profile" data-toggle="tab" aria-expanded="false">Profile</a>
+                                  </li>
+                              </ul>
+
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+                                  <div class="tab-pane fade in active" id="home">
+                                     <img src="images/news_right.png" class="img-responsive">
+                                  </div>
+                                  <div class="tab-pane fade" id="profile">
+                                      <h4>Profile Tab</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                  </div>                                
+                              </div>
+                  </div>
+
+
+                
+              </div>
+            </div>
+
+          </div>
+          <!-- ===========================End Content Detail ========================== -->
+
+      </div>
+      <!-- ================== End Body Content========================= -->
+    
+      <!-- ========================= Footer ============================-->
+      <div class="row" style="margin: auto;">
+        <div class="col-md-12" id="menu_footer" style="background-color:#f7f7f7;padding: 5px;">
+          <div class="col-sm-3">
+            <a href="#"><label class="menu-bottom">Catalog มือถือ</label></a>
+            <ul style="padding:0px;">
+              <li><a href="#">Catalog มือถือ</a></li>
+              <li><a href="#"> Catalog มือถือ Nokia</a></li>
+              <li><a href="#">Catalog มือถือ Samsung</a></li>
+              <li><a href="#">Catalog มือถือ SonyEricsson</a></li>
+              <li><a href="#">Catalog มือถือ i-mobile</a></li>
+              <li><a href="#">Catalog มือถือ LG</a></li>
+              <li><a href="#">Catalog มือถือ BlackBerry</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#"><label class="menu-bottom">market</label></a>
+             <ul style="padding:0px;">
+              <li><a href="#">ลงประกาศสินค้ามือถือ</a></li>
+              <li><a href="#">สมัครสมาชิก</a></li>
+              <li><a href="#">หน้าแรกตลาดซื้อขายมือถือ</a></li>
+            </ul>        
+          </div>
+          <div class="col-sm-2">
+            <a href="#"><label class="menu-bottom">Review มือถือ</label></a>
+              <ul style="padding:0px;">
+              <li><a href="#">หน้าแรกรีวิว</a></li>
+              <li><a href="#">รีวิว มือถือ Nokia</a></li>
+              <li><a href="#">รีวิว มือถือ Samsung</a></li>
+              <li><a href="#">รีวิว มือถือ Motorola</a></li>
+              <li><a href="#">รีวิว มือถือ LG</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <a href="#"><label class="menu-bottom">Price ราคามือถือ</label></a>
+             <ul style="padding:0px;">
+              <li><a href="#">ราคามือถือ</a></li>
+              <li><a href="#">ราคามือถือ มือถือ Nokia</a></li>
+              <li><a href="#">ราคามือถือ Samsung</a></li>
+              <li><a href="#">ราคามือถือ SonyEricsson</a></li>
+              <li><a href="#">ราคามือถือ i-mobile</a></li>
+              <li><a href="#">ราคามือถือ LG</a></li>
+              <li><a href="#">ราคามือถือ BlackBerry</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <a href="#"><label class="menu-bottom">forum</label></a>
+             <ul style="padding:0px;">
+              <li><a href="#">หน้าแรก cafe</a></li>
+              <li><a href="#">Nokia club</a></li>
+              <li><a href="#">ตั้งหัวข้อใหม่</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12" id="div_footer" style="min-height: 52px;background-color: #ff9900;color:#ffffff;text-align: center;font-weight: bolder;padding: 15px;">
+          © Copyright all rights reserved : ThaiMobileCenter.com 
+        </div>
+      </div>
+      <!-- ========================= Footer ============================-->
+    </div>
+    <!--======================= End Body Center ======================-->
+
+    <!--======================= Banner Side Right ======================-->
+    <div class="hidden-xs hidden-sm banner-side-right" style="max-width: 115px;">
+      <img src="images/banner_side_right.png" class="img-responsive">
+    </div>
+
+
+  </body>
+</html>
