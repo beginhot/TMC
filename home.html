@@ -69,16 +69,20 @@
 
       <div id="main_content">
           <!--=============  Menu Bar ============== -->
-          <nav class="navbar navbar-inverse  navbar-static-top" style="background-color:#4e4c48;">
+          <nav class="navbar navbar-inverse  navbar-fixed-top" style="background-color:#4e4c48;">
               <div class="container" >
-                  <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <div class="navbar-header" style="background-color: #2e2e2e">
+
+                      <button type="button" style="border: none" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                           <span class="sr-only"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand page-scroll hidden-sm hidden-md hidden-lg" href="#main"><span>thaimobilecenter</span></a>
+
+                      <span type="button" style="border: none;float: left;padding: 0px;margin: 5px;background-color:#2e2e2e;width: 75%" class="hidden-sm hidden-md hidden-lg">
+                          <img src="images/menu/logo_mobile.png" alt="" class="img-responsive"></span>
+                      </span>
 
                   </div>
                   <div id="navbar" class="navbar-collapse collapse">
@@ -110,7 +114,9 @@
           <!--=============End  Menu Bar ==============-->
 
           <!-- ================== Banner Top 2 ========================= -->
-          <div class="container" id="div_banner_top_2"><img src="images/banner_bottom_menu.png" class="img-responsive" style="margin: auto"></div>
+          <div class="container banner_top" id="div_banner_top_2" >
+              <img src="images/banner_bottom_menu.png" class="img-responsive" style="margin: auto;">
+          </div>
 
           <!-- ================== Product Name ========================= -->
           <div id="div_product_name" style="margin-top: 15px;font-size: 24px;">
@@ -119,7 +125,7 @@
           </div>
 
           <!-- ================== Path Menu Bar ========================= -->
-          <div id="div_path_menu_bar">
+          <div id="div_path_menu_bar" class="hidden-xs">
               <p style="font-size: 12px;">
                   <span style="color: #ff0000;">ตอนนี้คุณอยู่ที่</span> >>
                   <a href="#">หน้าแรก</a> >> <a href="#">catelog มือถือ</a> >>
@@ -131,48 +137,52 @@
 
           <!-- ================== Div Box Social ========================= -->
           <div class="container container-box-social" >
+              <div class="col-sm-9">
+                  <div style="max-width: 100px;text-align: center;float: left;line-height: 1;margin-top: 5px">
+                      <span style="color:#ff7800;font-size: 32px;font-weight: bolder">625</span><br>
+                      <span style="font-size: 14px;font-weight: bolder;">SHARES</span>
+                  </div>
 
-              <div style="max-width: 100px;text-align: center;float: left;line-height: 1">
-                  <span style="color:#3a85da;font-size: 24px;font-weight: bolder">625</span><br>
-                  <span style="font-size: 10px;">SHARES</span>
-              </div>
+                  <div class="box-social" style="margin-left: 20px;">
+                      <button type="button" class="btn btn-default btn-fb">
+                          <img src="images/icon/icon_facebook.png" class="img-responsive pull-left" style="margin: auto;">
+                          <span style="color:#FFFFFF;font-size: 14px; margin-right: 10px;">34k</span>
+                      </button>
+                  </div>
 
-              <div class="box-social" style="margin-left: 20px;">
-                  <button type="button" class="btn btn-default btn-fb">
-                      <img src="images/icon/icon_facebook.png" class="img-responsive pull-left" style="margin: auto;">
-                      <span style="color:#FFFFFF;font-size: 14px; margin-right: 10px;">34k</span>
-                  </button>
-              </div>
+                  <div class="box-social">
+                      <img src="images/icon/icon_twitter.png" class="img-responsive" style="margin: auto;">
+                  </div>
 
-              <div class="box-social">
-                  <img src="images/icon/icon_twitter.png" class="img-responsive" style="margin: auto;">
+                  <div class="box-social">
+                      <img src="images/icon/icon_google_plus.png" class="img-responsive" style="margin: auto;">
+                  </div>
+                  <div class="box-social">
+                      <img src="images/icon/icon_line.png" class="img-responsive" style="margin: auto;">
+                  </div>
               </div>
-
-              <div class="box-social">
-                  <img src="images/icon/icon_google_plus.png" class="img-responsive" style="margin: auto;">
+              <div class="col-sm-3">
+                  <div class="hidden-xs" style="min-width: 100px;max-width:275px;padding: 12px 0px 12px 0px;float:right;">
+                      <img src="images/icon/calendar.png">
+                      <span style="color: #565656;">Friday 03 June 2016</span>
+                  </div>
+                  <div  class="hidden-sm hidden-md hidden-lg" style="min-width: 100px;max-width: 275px;margin-top: 60px;">
+                      <img src="images/icon/calendar.png">
+                      <span style="color: #565656;">Friday 03 June 2016</span>
+                  </div>
               </div>
-              <div class="box-social">
-                  <img src="images/icon/icon_line.png" class="img-responsive" style="margin: auto;">
-              </div>
-              <div class="box-social">
-                  <img src="images/icon/icon_email.png" class="img-responsive" style="margin: auto;">
-              </div>
-              <div style="min-width: 100px;text-align: center;float: right;margin-left: 10px;padding: 12px;">
-                  <img src="images/icon/calendar.png" class="img-responsive" style="margin: auto;float: left;"><span style="color: #565656;font-size: 10px;">Fridy 03 June 2016</span>
-              </div>
-
           </div><!--/div-->
           <!-- ==================End Social Bar ========================= -->
 
           <div class="container" style="width: 100%;padding-left: 5px !important;margin-left: 0px !important;margin-top: 15px;">
 
-              <div class="row" style="margin-bottom: 25px">
+              <div class="row">
 
                   <!-- ================== Content Left ========================= -->
                   <div class="col-md-2" style="margin-bottom: 15px;min-width: 200px">
                       <div style="margin: auto">
 
-                          <div id="img_product" style="background-color: #f2dede;padding: 10px;">
+                          <div id="img_product" style="background-color: #ebebeb;padding: 10px;">
                               <img src="images/img_product.png" class="img-responsive center-block">
                           </div>
 
@@ -185,7 +195,7 @@
                           </div>
 
 
-                          <div id="compared_mobile" style="border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 10px;">
+                          <div id="compared_mobile" style="border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 10px;padding-top: 10px">
                               <img src="images/menu/icon_compared_mobile.jpg" class="img-responsive center-block">
                               <p class="text-center" style="color: #005ca2;font-weight: bolder;font-size: 11px;"><a href="#">เปรียบเทียบรุ่นมือถือ</a></p>
                           </div>
@@ -672,8 +682,8 @@
                               </div>
                           </div>
 
-                          <!--========================= Ads =============================-->
-                          <div style="margin: 25px 0px 25px 0px;"><img src="images/ads_content_cneter_bottom.png" alt=""></div>
+                          <!--========================= Ads Bottom Content Center=============================-->
+                          <div style="margin: 25px 0px 25px 0px;text-align: center;"><img src="images/ads_content_cneter_bottom.png" alt=""></div>
 
                       </div>
 
@@ -686,7 +696,7 @@
                       <!-- ================== Content Right ========================= -->
                       <div style="margin:auto">
                           <div id="banner_right">
-                              <img src="images/banner_right.png" class="img-responsive">
+                              <img src="images/banner_right.png" class="img-responsive" style="margin: auto">
                           </div>
 
                           <div class="panel-body" id="recommend_content">
@@ -701,7 +711,58 @@
                               <!-- Tab panes -->
                               <div class="tab-content">
                                   <div class="tab-pane fade in active" id="home">
-                                      <img src="images/news_right.png" class="img-responsive">
+
+                                      <div class="media">
+                                          <div class="media-left media-middle">
+                                              <a href="#">
+                                                  <img class="media-object" src="images/phone_news_right.png" alt="">
+                                              </a>
+                                          </div>
+                                          <div class="media-body">
+                                              <p style="font-size: 8px;margin-top: 5px">
+                                                  <a href="#">OPPO Find 9 ว่าที่เรือธงสุดล้ำรุ่นต่อไป หลุดสเปคเกือบยกเครื่อง คาดมาพร้อมจอขอบโค้ง 2K QHD 5.5 นิ้ว RAM 8GB!</a>
+                                              </p>
+                                              <div>
+                                                  <img src="images/icon/like_btn.png" alt="Like Facebook">
+                                                  <span style="border: 1px solid #f2dede;font-size: 8px;font-weight: bolder">253</span>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="media">
+                                          <div class="media-left media-middle">
+                                              <a href="#">
+                                                  <img class="media-object" src="images/phone_news_right.png" alt="">
+                                              </a>
+                                          </div>
+                                          <div class="media-body">
+                                              <p style="font-size: 8px;margin-top: 5px">
+                                                  <a href="#">OPPO Find 9 ว่าที่เรือธงสุดล้ำรุ่นต่อไป หลุดสเปคเกือบยกเครื่อง คาดมาพร้อมจอขอบโค้ง 2K QHD 5.5 นิ้ว RAM 8GB!</a>
+                                              </p>
+                                              <div>
+                                                  <img src="images/icon/like_btn.png" alt="Like Facebook">
+                                                  <span style="border: 1px solid #f2dede;font-size: 8px;font-weight: bolder">253</span>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="media">
+                                          <div class="media-left media-middle">
+                                              <a href="#">
+                                                  <img class="media-object" src="images/phone_news_right.png" alt="">
+                                              </a>
+                                          </div>
+                                          <div class="media-body">
+                                              <p style="font-size: 8px;margin-top: 5px;">
+                                                  <a href="#">OPPO Find 9 ว่าที่เรือธงสุดล้ำรุ่นต่อไป หลุดสเปคเกือบยกเครื่อง คาดมาพร้อมจอขอบโค้ง 2K QHD 5.5 นิ้ว RAM 8GB!</a>
+                                              </p>
+                                              <div>
+                                                  <img src="images/icon/like_btn.png" alt="Like Facebook">
+                                                  <span style="border: 1px solid #f2dede;font-size: 8px;font-weight: bolder">253</span>
+                                              </div>
+                                          </div>
+                                      </div>
+
                                   </div>
                                   <div class="tab-pane fade" id="profile">
                                       <h4>Profile Tab</h4>
@@ -711,16 +772,164 @@
                           </div>
                       </div>
                       <!-- ================== End Content Right ========================= -->
-
-
                   </div>
 
               </div>
               <!-- ================== End Body Content ========================= -->
 
+
+
+                <!-- ======================= Content Bottom ======== -->
+              <div class="row hidden-xs" style="margin-bottom: 45px">
+                  <div class="col-md-12">
+
+                      <div class="hidden-xs" style="font-size: 11px;border: 1px solid #cccccc;background-color: #ebebeb;margin-top: 20px;padding: 2px;">
+                          <span style="font-weight: bolder;color: #ff0000;">*  เกี่ยวกับข้อมูลมือถือ </span>
+                          <span>เพื่อให้คุณได้รับข้อมูลที่ถูกต้องมากที่สุด โปรดตรวจสอบคุณสมบัติและราคาของมือถือรุ่นนี้จากตัวแทนจำหน่ายหรือร้านค้าอีกครั้งหนึ่ง และหากพบข้อมูลคุณสมบัติที่ไม่ถูกต้องสามารถติดต่อทีมงานได้</span>
+                          <a href="#">>> ที่นี่ครับ</a>
+                      </div>
+
+
+                      <!--================================ ข่าวสาร บทความที่เกี่ยวข้องกับมือถือ ===========================-->
+                      <div class="panel panel-default" style="margin-top: 20px;">
+                          <div class="panel-heading" style="background-color: #333333;color: #FFFFFF;"><img src="images/icon/view.gif" alt=""><span style="margin-left: 10px;">ข่าวสาร บทความที่เกี่ยวข้องกับมือถือ Samsung Galaxy S7 edge</span></div>
+                          <div class="panel-body" style="padding: 5px;">
+                              <div class="col-md-2">
+                                  <div class="thumbnail">
+                                      <img src="images/img_product.png" alt="Samsung">
+                                      <div class="caption">
+                                          <p style="font-size: 8px;font-weight: bolder"><a href="#">Samsung Galaxy S8 ว่าที่เรือธงตัวท็อปประจำ S Series รุ่นต่อไป คาดอัปเก</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="thumbnail">
+                                      <img src="images/img_product.png" alt="Samsung">
+                                      <div class="caption">
+                                          <p style="font-size: 8px;font-weight: bolder"><a href="#">Samsung Galaxy S8 ว่าที่เรือธงตัวท็อปประจำ S Series รุ่นต่อไป คาดอัปเก</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="thumbnail">
+                                      <img src="images/img_product.png" alt="Samsung">
+                                      <div class="caption">
+                                          <p style="font-size: 8px;font-weight: bolder"><a href="#">Samsung Galaxy S8 ว่าที่เรือธงตัวท็อปประจำ S Series รุ่นต่อไป คาดอัปเก</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="thumbnail">
+                                      <img src="images/img_product.png" alt="Samsung">
+                                      <div class="caption">
+                                          <p style="font-size: 8px;font-weight: bolder"><a href="#">Samsung Galaxy S8 ว่าที่เรือธงตัวท็อปประจำ S Series รุ่นต่อไป คาดอัปเก</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="thumbnail">
+                                      <img src="images/img_product.png" alt="Samsung">
+                                      <div class="caption">
+                                          <p style="font-size: 8px;font-weight: bolder"><a href="#">Samsung Galaxy S8 ว่าที่เรือธงตัวท็อปประจำ S Series รุ่นต่อไป คาดอัปเก</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="thumbnail">
+                                      <img src="images/img_product.png" alt="Samsung">
+                                      <div class="caption">
+                                          <p style="font-size: 8px;font-weight: bolder"><a href="#">Samsung Galaxy S8 ว่าที่เรือธงตัวท็อปประจำ S Series รุ่นต่อไป คาดอัปเก</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="panel-footer" style="font-size: 11px;text-align: right;background-color: #ffffff"><a href="#">ข่าวสาร บทความที่เกี่ยวข้องกับมือถือ Samsung Galaxy S7 edge ทั้งหมด</a></div>
+                      </div>
+
+                      <!-- ======================================= Banner =================================== -->
+                      <div style="margin: auto;width: 100%;">
+                          <img src="images/banner_bottom_1.png" alt="" class="img-responsive" style="margin: auto;">
+                      </div>
+
+
+                      <div style="margin-top: 20px;">
+                          <img src="images/icon/bar_recommened_samsung.gif" alt="" class="img-responsive">
+                          <div style="padding-left: 10px">
+
+                              <div class="box-product-recommend">
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+                              <div class="box-product-recommend" >
+                                  <div style="padding: 5px;background-color: #eceaea;">
+                                      <img src="images/Samsung-Galaxy-A7-2016-s.jpg" alt="" class="img-responsive" style="margin: auto">
+                                  </div>
+                                  <div><a href="#">Samsung Galaxy A7 (2016)</a></div>
+                              </div>
+
+                          </div>
+                      </div>
+
+                      <div style="margin-top: 20px;">
+                          <img src="images/icon/bar_mobilegroup.gif" alt="" class="img-responsive">
+                      </div>
+
+
+                  </div>
+              </div>
+
+
               <!-- ========================= Footer ============================-->
               <div class="row">
-                  <div class="col-md-12" id="menu_footer" style="background-color:#f7f7f7;padding: 5px;">
+                  <div class="col-md-12 hidden-xs" id="menu_footer" style="background-color:#f7f7f7;padding: 5px;">
                       <div class="col-sm-3">
                           <a href="#"><label class="menu-bottom">Catalog มือถือ</label></a>
                           <ul style="padding:0px;">

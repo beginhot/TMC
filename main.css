@@ -60,7 +60,6 @@ body{
 .box-social{
     text-align: center;
     float: left;
-    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -119,19 +118,32 @@ button.btn-fb:hover{
 }
 /*===============================================================*/
 
+.box-product-recommend{
+    text-align: center;
+    font-size: 11px;
+    width: 100px;
+    float: left;
+    margin-left: 15px
+}
 
 /*---------------------- Set icon menu bottom -----------------------*/
+
+.banner_top{
+    padding-top: 60px;
+}
+
 #menu_footer ul>li{
     list-style: square inside url("images/icon/menu_bottom.gif");
     font-size:11px;
 
 }
 
-
-@media (min-width: 1200px){
-    .top-menu{
-        padding-left:30px;
-        padding-right:30px;
+@media (min-width: 768px){
+    .navbar-fixed-top{
+        position: static;
+    }
+    .banner_top{
+        padding-top: 0px;
     }
 }
 
@@ -140,4 +152,14 @@ button.btn-fb:hover{
         min-width: 330px;
     }
 }
+
+@media (min-width: 1200px){
+    .top-menu{
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
+
+
+
 
