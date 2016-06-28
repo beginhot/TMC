@@ -132,6 +132,17 @@ button.btn-fb:hover{
     padding-top: 60px;
 }
 
+.background-news-present-normal{
+    padding: 5px;
+    background-color:#f7f7f7;
+    max-height: 100px;
+}
+
+.background-news-present-tone{
+    padding: 5px;
+    max-height: 100px;
+}
+
 #menu_footer ul>li{
     list-style: square inside url("images/icon/menu_bottom.gif");
     font-size:11px;
