@@ -122,7 +122,8 @@ button.btn-fb:hover{
     font-size: 11px;
     width: 100px;
     float: left;
-    margin-left: 15px
+    margin-left: 15px;
+    width: 100px;
 }
 
 /*---------------------- Set icon menu bottom -----------------------*/
@@ -147,6 +148,28 @@ button.btn-fb:hover{
     font-size:11px;
 
 }
+
+
+.box-news-mobile{
+    max-width: 150px;
+    max-height: 160px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: underline;
+    float:left;
+    margin:5px 10px 5px 10px;
+
+}
+.box-news-mobile-img {
+    border: 2px solid #b2b2b2;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.img-margin-center{
+    margin: auto;
+}
+
 
 @media (min-width: 768px){
     .navbar-fixed-top{
