@@ -118,12 +118,95 @@ button.btn-fb:hover{
 /*===============================================================*/
 
 .box-product-recommend{
-    text-align: center;
+    float:left;
+    width: 115px;
+    height: 163px;
+    margin-right: 20px;
+}
+.box-product-background{
+    width:100px;
+    height:128px;
+    margin: auto;
+    background-color:#eceaea;
+    padding: 5px;
+}
+
+.box-product-img{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    border: 1px solid #c0c0c0;
+}
+.box-product-content{
     font-size: 11px;
-    width: 100px;
-    float: left;
-    margin-left: 15px;
-    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.text11{
+    font-size: 12px;
+}
+
+.box-warning{
+    width:800px;
+    margin: 25px auto;
+    border: 1px solid #FF0000;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+
+.box-title-post{
+    width: 100%;
+    margin-top: 45px;
+    border: 2px solid #cccccc;
+    border-right: none;
+    border-left: none;
+    padding: 2px 5px 2px 5px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.box-div-comment{
+    margin: 20px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.box-div-comment-table{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-div-comment-img-user{
+    width:100px;
+    height: 100px;
+    background-color: #e6e6e6;
+    font-weight: bolder;
+    font-size: 11px;
+}
+.box-div-comment-td-title{
+    width: 100%;
+    border: 2px solid #cccccc;
+    border-left: none;
+    border-right: none;
+}
+
+.box-div-comment-td-content{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box-div-comment-vote{
+    border-top:1px dotted ;
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 5px;
+    font-size: 10px;
 }
 
 /*---------------------- Set icon menu bottom -----------------------*/
@@ -170,6 +253,18 @@ button.btn-fb:hover{
     margin: auto;
 }
 
+.line-border{
+    border: 1px solid #c0c0c0;
+}
+
+.td-table-comment{
+    width: 100px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    padding: 2px;
+    background-color: #ebebeb;
+}
 
 @media (min-width: 768px){
     .navbar-fixed-top{
