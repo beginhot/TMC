@@ -209,6 +209,37 @@ button.btn-fb:hover{
     font-size: 10px;
 }
 
+
+.font-mobile-category{
+    color: #000000;
+    font-weight: bold;
+}
+.font-mobile-category-total{
+    font-size: 8px;
+    color: #746a66;
+}
+
+.font-title{
+    font-size: 11px;
+    font-weight: bold;
+    color: #746a66;
+}
+
+.box-question-category{
+    background-color: #f7f7f7;
+
+}
+table.question-category {
+    border-collapse: separate !important;
+    border-spacing: 2px 2px !important;
+
+}
+table.question-category>tbody>tr{
+    background-color: #f7f7f7;
+}
+table.question-category>tbody>tr>td:nth-child(odd){
+    text-align: center;
+}
 /*---------------------- Set icon menu bottom -----------------------*/
 
 .banner_top{
