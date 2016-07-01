@@ -32,10 +32,57 @@
         }
 
 
+        /*
+        *  <li class="active" id="li_tab_news_present">
+         <a href="#home" data-toggle="tab" aria-expanded="false" class="tab_news" style="padding: 7px;!important;">
+         <img src="images/menu/news_present1.png" alt="" class="img-responsive" style="width: 100%;height: 87%" id="news_present">
+         <img src="images/menu/news_present_unselect.png" alt="" class="img-responsive hide" style="width: 100%;height: 87%" id="news_present_unselect">
+         </a>
+         </li>
+         <li style="background-color: #e6e6e6;" id="li_tab_news_update">
+         <a href="#profile" data-toggle="tab" aria-expanded="false" class="tab_news" style="padding: 7px;!important;">
+         <img src="images/menu/news_update_unselect.png" alt=""  style="width: 100%;height: 87%" id="news_update_unselect">
+         <img src="images/menu/news_select.png" alt="" class="hide"  style="width: 100%;height: 87%" id="news_select">
+         </a>
+         </li>
+        * */
+
         $(document).ready(function() {
             //============= Call Function find Index banner ==================
             console.log($(window).width());
             fix_index_banner();
+
+
+            $("#news_present_unselect").hide();
+            $("#news_select").hide();
+
+            $('#recommend_content_tab li').on('click',function(){
+
+                $("#li_tab_news_present").css("background-color", "#FFFFFF");
+                $("#li_tab_news_update").css("background-color", "#FFFFFF");
+
+                var tab_id=this.id;
+
+                if(tab_id=='li_tab_news_present'){
+                    $("#news_present_unselect").hide();
+                    $("#news_select").hide();
+                    $("#news_present").show();
+                    $("#news_update_unselect").show();
+
+                    $("#li_tab_news_present").css("background-color", "#FFFFFF");
+                    $("#li_tab_news_update").css("background-color", "#e6e6e6");
+                }else{
+
+                    $("#news_present_unselect").show();
+                    $("#news_select").show();
+                    $("#news_present").hide();
+                    $("#news_update_unselect").hide();
+
+                    $("#li_tab_news_present").css("background-color", "#e6e6e6");
+                    $("#li_tab_news_update").css("background-color", "#FFFFFF");
+                }
+
+            });
 
         });
 
@@ -44,6 +91,8 @@
         $(window).resize(function(event) {
             fix_index_banner();
         });
+
+
 
 
 
@@ -136,7 +185,7 @@
         <!-- ==================End Product Name ========================= -->
 
         <!-- ================== Path Menu Bar ========================= -->
-        <div id="div_path_menu_bar" class="hidden-xs">
+        <div id="div_path_menu_bar" class="hidden-xs" style="padding-left: 15px;">
             <p style="font-size: 12px;">
                 <span style="color: #ff0000;">ตอนนี้คุณอยู่ที่</span> >>
                 <a href="#">หน้าแรก</a> >> <a href="#">catelog มือถือ</a> >>
@@ -199,12 +248,46 @@
                             <img src="images/img_product.png" class="img-responsive center-block">
                         </div>
 
-                        <div id="product_price" style="margin-top: 5px;">
+                        <div id="product_price" style="margin-top:5px;">
                             <div class="product_price">ราคามือถือจากศูนย์ต่างๆ </div>
-                            <div class="product_price-detail">ราคาศูนย์ <span class="text_price_detail">26,900 บาท <img src="images/icon/price_hilight.gif" ></span></div>
-                            <div class="product_price-detail">ราคากลาง <span class="text_price_detail">26,900 บาท <img src="images/icon/price_hilight.gif" ></span></div>
-                            <div class="product_price-detail">อัพเดทวันที่ : <span style="color: #008000;">19/04/2016</span></div>
-                            <div class="product_price-detail">ว่างจำหน่าย : <span style="color: #008000;">มีนาคม 2559</span></div>
+
+                            <div  class="product_price-detail">
+                                <table class="table-price-official">
+                                    <tr>
+                                        <td>ราคาศูนย์</td>
+                                        <td>:</td>
+                                        <td><span class="text_price_detail">26,900 บาท <img src="images/icon/price_hilight.gif" ></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div  class="product_price-detail">
+                                <table class="table-price-official">
+                                    <tr>
+                                        <td>ราคากลาง</td>
+                                        <td>:</td>
+                                        <td><span class="text_price_detail">26,900 บาท <img src="images/icon/price_hilight.gif" ></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div  class="product_price-detail">
+                                <table class="table-price-official">
+                                    <tr>
+                                        <td>อัพเดทวันที่</td>
+                                        <td>:</td>
+                                        <td><span class="text_price_detail">19/04/2016</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div  class="product_price-detail">
+                                <table class="table-price-official">
+                                    <tr>
+                                        <td>ว่างจำหน่าย</td>
+                                        <td>:</td>
+                                        <td><span class="text_price_detail">มีนาคม 2559</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+
                         </div>
 
 
@@ -221,7 +304,7 @@
 
                         <div id="price_list" class="hidden-xs" style="margin-top: 10px;">
                             <div class="product_price">ราคามือถือจากผู้ใช้ <img src="images/icon/new_icon.gif" alt=""></div>
-                            <table style="font-size: 11px;width: 100%;background-color:#f7f7f7;">
+                            <table style="font-size: 11px;width: 100%;background-color:#ebebeb;">
                                 <tr>
                                     <td style="width: 45%;"> <a href="#">ThaiMobile7< </a></td>
                                     <td style="width: 45%;" class="text_price_detail">23,200 บาท</td>
@@ -307,7 +390,7 @@
                             <table width="100%" cellspacing="5" cellpadding="2" style="font-size: 11px;margin-top:10px;">
                                 <tbody>
                                 <tr>
-                                    <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">การออกแบบดีไซน์</td>
+                                    <td colspan="2" style="padding-left: 10px;background-color:#ebebeb ;">การออกแบบดีไซน์</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style="height: 5px;width: 100%;"></td>
@@ -322,7 +405,7 @@
 
 
                                 <tr>
-                                    <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">คุณสมบัติและฟังก์ชัน</td>
+                                    <td colspan="2" style="padding-left: 10px;background-color:#ebebeb ;">คุณสมบัติและฟังก์ชัน</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style="height: 5px;width: 100%;"></td>
@@ -337,7 +420,7 @@
 
 
                                 <tr>
-                                    <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">ประสิทธิภาพและเสถียรภาพ</td>
+                                    <td colspan="2" style="padding-left: 10px;background-color:#ebebeb ;">ประสิทธิภาพและเสถียรภาพ</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style="height: 5px;width: 100%;"></td>
@@ -352,7 +435,7 @@
 
 
                                 <tr>
-                                    <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">ความแข็งแรงทนทาน</td>
+                                    <td colspan="2" style="padding-left: 10px;background-color:#ebebeb ;">ความแข็งแรงทนทาน</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style="height: 5px;width: 100%;"></td>
@@ -367,7 +450,7 @@
 
 
                                 <tr>
-                                    <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;">ความคุ้มค่า</td>
+                                    <td colspan="2" style="padding-left: 10px;background-color:#ebebeb ;">ความคุ้มค่า</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style="height: 5px;width: 100%;"></td>
@@ -382,7 +465,7 @@
 
 
                                 <tr>
-                                    <td colspan="2" style="padding-left: 10px;background-color:#f7f7f7 ;font-weight: bolder;">คะแนนรวมเฉลี่ย</td>
+                                    <td colspan="2" style="padding-left: 10px;background-color:#ebebeb ;font-weight: bolder;">คะแนนรวมเฉลี่ย</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style="height: 5px;width: 100%;"></td>
@@ -477,9 +560,12 @@
                             </ul>
                         </div>
 
-                        <div id="bar_price">
-                            <img src="images/menu/bar_price.png" class="img-responsive">
+                        <div id="banner_content_version_mobile" class="hidden-sm hidden-md hidden-lg" style="width: 100%;margin-top: 25px;margin-bottom:  25px; ">
+                            <img src="images/banner_right.png" class="img-responsive" style="margin: auto">
+                        </div>
 
+                        <div id="bar_price" style="margin-bottom: 15px;">
+                            <img src="images/menu/bar_price.png" class="img-responsive" style="margin-bottom: 15px;">
                             <table class="table-price-online">
                                 <tr>
                                     <td style="width:25%; border-right: 1px solid #cccccc;">
@@ -496,7 +582,6 @@
                                     </td>
                                 </tr>
                             </table>
-
                             <table class="table-price-online">
                                 <tr>
                                     <td style="width:25%; border-right: 1px solid #cccccc;">
@@ -707,25 +792,29 @@
                 <div class="col-md-3" style="margin-bottom: 15px;" id="col_content_right">
                     <!-- ================== Content Right ========================= -->
                     <div style="margin:auto">
-                        <div id="banner_right">
+                        <div id="banner_right" class="hidden-xs">
                             <img src="images/banner_right.png" class="img-responsive" style="margin: auto">
                         </div>
 
-                        <div class="panel-body" id="recommend_content">
+                        <div class="panel-body" id="recommend_content_tab" style="padding: 15px 0px;">
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs">
-                                <li class="active">
-                                    <a href="#home" data-toggle="tab" aria-expanded="false" style="max-width: 150px;height:45px;padding: 5px;">
-                                        <img src="images/menu/news_present.png" alt="" class="img-responsive" style="width: 100%">
+                                <li class="active" id="li_tab_news_present">
+                                    <a href="#home" data-toggle="tab" aria-expanded="false" class="tab_news" style="padding: 7px;!important;">
+                                        <img src="images/menu/news_present1.png" alt="" class="img-responsive" style="width: 100%;height: 87%" id="news_present">
+                                        <img src="images/menu/news_present_unselect.png" alt="" class="img-responsive" style="width: 100%;height: 87%" id="news_present_unselect">
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#profile" data-toggle="tab" aria-expanded="false" style="min-width: 100px;height:45px;padding: 5px;">ข่าวสารล่าสุด</a>
+                                <li style="background-color: #e6e6e6;" id="li_tab_news_update">
+                                    <a href="#profile" data-toggle="tab" aria-expanded="false" class="tab_news" style="padding: 7px;!important;">
+                                        <img src="images/menu/news_update_unselect.png" alt=""  style="width: 100%;height: 87%" id="news_update_unselect">
+                                        <img src="images/menu/news_select.png" alt=""  style="width: 100%;height: 87%" id="news_select">
+                                    </a>
                                 </li>
                             </ul>
 
                             <!-- Tab panes -->
-                            <div class="tab-content" style="border: 1px solid #ddd;border-top: none;padding: 10px;">
+                            <div class="tab-content" style="border: 1px solid #ddd;border-top: none;">
                                 <div class="tab-pane fade in active" id="home">
 
                                     <div class="media background-news-present-tone">
@@ -835,6 +924,10 @@
 
                                 </div>
                             </div>
+                        </div>
+
+                        <div style="width: 100%">
+                            <div></div>
                         </div>
 
                     </div>
@@ -999,7 +1092,7 @@
 
                     <div style="margin-top: 50px;width:100%;padding-left: 0px;" class="container">
                         <img src="images/icon/bar_mobilegroup.gif" alt="" class="img-responsive">
-                        <div style="background-color: #f7f7f7;font-size: 12px;margin-left: 50px;padding: 5px">
+                        <div style="background-color: #ebebeb;font-size: 12px;margin-left: 50px;padding: 5px">
                             <div>
                                 <span style="color:#FF0000">มือถือตามหมวดหมู่การใช้งาน (Mobile Special group) </span>
                                 เป็นระบบที่ thaimobilecenter จัดทำเพื่อให้ผู้ใช้สามารถค้นหามือถือ ได้ตรงกับการใช้งานโดย
@@ -1262,7 +1355,7 @@
                     </div>
 
 
-                    <div style="width: 100%;margin-top: 25px;background-color: #f7f7f7;padding: 5px" class="container text11">
+                    <div style="width: 100%;margin-top: 25px;background-color: #ebebeb;padding: 5px" class="container text11">
                         <span style="color: #FF0000;font-weight: bolder">*รีวิวจากผู้ใช้ <img src="images/icon/new_icon.gif" alt="">  </span><br>
                         <span>
                             เป็นโปรแกรมที่เราพัฒนาเพื่อให้ทุกท่านร่วมกันรีวิวมือถือทั้งจุดเด่นและจุดด้อยของโทรศัพท์รุ่นนั้น ขอเชิญทุกท่าน เข้ามารีวิวมือถือของท่าน เพื่อเป็นข้อมูล ให้กับผู้ชมท่านอื่นและขอขอบคุณที่ร่วมแบ่งปันข้อมูลที่มีประโยชน์ร่วมกันครับ
@@ -1540,7 +1633,7 @@
     <!-- =========================Menu Footer =================-->
     <div class="container" style="width: 100%;">
         <div class="row">
-            <div class="col-md-12 hidden-xs" id="menu_footer" style="background-color:#f7f7f7;padding: 5px;">
+            <div class="col-md-12 hidden-xs" id="menu_footer" style="background-color:#ebebeb;padding: 5px;">
                 <div class="col-sm-3">
                     <a href="#"><label class="menu-bottom">Catalog มือถือ</label></a>
                     <ul style="padding:0px;">
