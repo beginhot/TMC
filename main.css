@@ -308,9 +308,27 @@ table.question-category>tbody>tr>td:nth-child(odd){
 }
 
 .tab_news{
-    max-width: 145px;
+    max-width: 148px;
 }
 
+.table_news_right{
+    font-size: 11px;
+}
+
+table.table_news_right>tbody>tr>td{
+    padding: 5px;
+}
+
+table.table_news_right>tbody>tr:nth-child(even){
+    background-color: #ebebeb;
+}
+
+.span-count-like{
+    border: 1px solid #f2dede;
+    font-size: 8px;
+    font-weight: bolder;
+    background-color: #FFFFFF;
+}
 
 @media (min-width: 485px){
     .tab_news{
@@ -319,16 +337,10 @@ table.question-category>tbody>tr>td:nth-child(odd){
     }
 }
 
-@media (min-width: 968px){
-    .tab_news{
-        max-width: 145px;
-    }
-
-}
 
 @media (min-width: 768px){
-    .tab_news{
-        padding: 5px;
+    .tab_news_update{
+        padding: 7px 2px 7px 3px;
     }
 
     .navbar-fixed-top{
@@ -358,8 +370,15 @@ table.question-category>tbody>tr>td:nth-child(odd){
         font-size: 14px;
     }
 
+}
+
+@media (min-width: 968px){
+    .tab_news{
+        max-width: 148px;
+    }
 
 }
+
 
 @media (min-width: 1050px){
     #col_content_right{
